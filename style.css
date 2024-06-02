@@ -1,0 +1,112 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./IMAGE/Credit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    font-family: Arial, sans-serif;
+    /* width: 400px; */
+    /* height: 700px; */
+    background-color: rgb(44, 44, 63);
+    border: .1px solid rgb(123, 134, 123);
+    color: #fff;
+    border-radius: 15px;
+    padding: 30px 40px;   
+}
+.container h1{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    /* text-transform:uppercase; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    margin: 2px 0;
+}
+button{
+    background-color: rgb(41, 175, 24);
+    color: white;
+    padding: 15px 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(64, 136, 82);
+    transform: scale(1.1);
+}
+#result{
+    color: white;
+    font-weight: 300;
+    font-family: Impact;
+    font-size: 15px;
+}
+.error-message{
+    color: red;
+    font-size: 0.5em;
+    display: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width:425px){
+    body{
+        width: 100%;
+        /* height: 100dvh; */
+        background-color: rgb(44, 44, 63);
+        margin-left: 20px;
+       
+    }
+    .container{
+        width: 100dvw;
+        /* margin-left: 20px; */
+    }
+    .container h1{
+       
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        text-transform:uppercase;
+    }
+    input{
+        height: 30px;
+        
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    form button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        background-color: rgb(41, 175, 24);
+        color: white;
+        font-size: 0.7rem;
+        padding: 10px 0;
+        width: 100px;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border:greenyellow;
+        cursor: pointer;
+    }
+    
+}

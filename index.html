@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Worthiness Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Worthiness Checker</h1>
+        <form id="loanForm">
+
+            <label for="name">Customer Name:</label>
+            <input  type="text" id="name" name="name" required >
+            <span id="nameError" class="error-message">Please enter you Name.</span>
+
+            <label for="currentAmount">Current Amount in Account:</label>
+            <input  type="text" id="currentAmount" name="currentAmount" required>
+            <span id="currentAmountError" class="error-message">Please enter a valid number.</span>
+
+
+            <label for="loanAmount">Loan Amount Required:</label>
+            <input type="text" id="loanAmount" name="loanAmount" required>
+            <span id="loanAmountError" class="error-message">Please enter a valid number.</span>
+
+            <label for="creditHistory">6 Months Credit History:</label>
+            <select id="creditHistory" name="creditHistory" required>
+                <option>Select Credit History</option>
+                <option value="no">1</option>
+                <option value="no">2</option>
+                <option value="no">3</option>
+                <option value="no">4</option>
+                <option value="no">5</option>
+                <option value="no">6</option>
+                <option value="yes">7</option>
+                <option value="yes">8</option>
+                <option value="yes">9</option>
+                <option value="yes">10</option>
+                <option value="yes">11</option>
+                <option value="yes">12</option>
+            </select>
+
+            <label for="lastDeposit">Last Deposit Date:</label>
+            <input type="date" id="lastDeposit" name="lastDeposit" required>
+
+            <label for="lastLoanCollection">Last Loan Collection Date:</label>
+            <input type="date" id="lastLoanCollection" name="lastLoanCollection" required>
+
+            <label for="loanRepaymentStart">Loan Repayment Start Date:</label>
+            <input type="date" id="loanRepaymentStart" name="loanRepaymentStart" required>
+
+            <label for="loanRepaymentEnd">Loan Repayment End Date:</label>
+            <input type="date" id="loanRepaymentEnd" name="loanRepaymentEnd" required>
+
+            <label for="accountType">Account Type:</label>
+            <select id="accountType" name="accountType" required>
+                <option>Select Account Type</option>
+                <option value="current">Current</option>
+                <option value="savings">Savings</option>
+            </select>
+
+            <button type="submit" >Check Eligibility</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
